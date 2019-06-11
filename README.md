@@ -52,7 +52,7 @@ w.filterwarnings(action='ignore')
 
 
 * 호선을 할당하는 함수 My_switch()
-~~~
+~~~python
 # C언어의 switch문의 아이디어를 사용하여, 모든 역의 호선을 data에 할당하기 위한 함수
 def My_switch(row) :
     return {0 : 1, 1 : 1, 2 : 2, 3 : 3, 4 : 4}.get(row['호선'], 0)
@@ -60,7 +60,7 @@ def My_switch(row) :
 
 
 * 입력을 받는 함수 Check(), Name_Check()
-~~~
+~~~python
 # 범위에 맞는 정수만 입력받아서 정수형을 리턴하는 함수
 def Check(message, x, y) :
 
@@ -102,8 +102,9 @@ def Name_Check(message, num, name) :
     return user
 ~~~
 
+
 * csv파일으로부터 읽어온 자료를 리스트로 변환한 후에 그것의 평균을 구해서 결과리스트에 할당하는 함수 Mean_values_tolist(), Mean_tolist()
-~~~
+~~~python
 # values.tolist()에 의해 만들어진 이차원 리스트의 모든 원소들의 평균을 구해서 결과리스트에 할당하는 함수
 def Mean_values_tolist(dat_list, res_list) :
 
@@ -131,9 +132,8 @@ def Mean_tolist(dat_list, res_list) :
 ~~~
 
 
-
 * 그래프를 출력하는 함수 Print_graph()
-~~~
+~~~python
 # matplotlib 를 이용해서 출력하는 함수
 def Print_graph(Ptype, Ires, Ores, Name, message) :
     Clist = range(len(Name))
@@ -171,8 +171,8 @@ def Print_graph(Ptype, Ires, Ores, Name, message) :
 
 
 
-* main()
-~~~
+* main() 함수
+~~~python
 if __name__ == "__main__" :
 
     info = []
